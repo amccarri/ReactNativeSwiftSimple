@@ -12,10 +12,10 @@ Here are the steps I followed:
 
 1. Follow react-native getting started guide to get all the tools installed.  Make sure you follow the instructions under the `building projects with native code` tab.
 1. Remove the objective-C files for the main app delegate and replace them with Swift versions.
-  1. main.m
-  1. UIApplicationDelegate.h
-  1. UIApplicationDelegate.m
-  1. Create the AppDelegate.swift file.
-  1. Xcode will ask you if you want to generate a bridging header, say `yes`.
+    1. delete main.m
+    1. delete UIApplicationDelegate.h
+    1. delete UIApplicationDelegate.m
+    1. Create the AppDelegate.swift file.
+    1. Xcode will ask you if you want to generate a bridging header, say `yes`.
 1. Add the React header files you'll be using to the bridging header.
 1. See my implementation of AppDelegate for how to access an RN bundle.
