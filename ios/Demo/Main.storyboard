@@ -24,15 +24,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rx output" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5I-6l-6gT">
+                                <rect key="frame" x="289" y="626" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ddn-TY-kr8" firstAttribute="top" secondItem="6aI-5l-nGS" secondAttribute="top" constant="16" id="W64-oW-JiA"/>
                             <constraint firstItem="Ddn-TY-kr8" firstAttribute="centerX" secondItem="6aI-5l-nGS" secondAttribute="centerX" id="ZM2-Ic-thb"/>
+                            <constraint firstItem="6aI-5l-nGS" firstAttribute="bottom" secondItem="h5I-6l-6gT" secondAttribute="bottom" constant="20" id="uBg-5d-Y8o"/>
+                            <constraint firstItem="6aI-5l-nGS" firstAttribute="trailing" secondItem="h5I-6l-6gT" secondAttribute="trailing" constant="16" id="xpb-9Z-gCp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6aI-5l-nGS"/>
                     </view>
                     <connections>
+                        <outlet property="rxOutputLabel" destination="h5I-6l-6gT" id="btM-D5-x3Y"/>
                         <outlet property="titleLabel" destination="Ddn-TY-kr8" id="RQM-gO-q3g"/>
                     </connections>
                 </viewController>
